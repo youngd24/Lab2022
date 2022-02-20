@@ -5,18 +5,23 @@
 ###############################################################################
 
 [all:children]
-labnet
+labnet-core
+labnet-ws
+labnet-octoprint
 
 ###############################################################################
 # main group
 ###############################################################################
-[labnet]
+[labnet-core]
 unifi01
 pihole01
 dns01
 mgt01
 jenkins01
-lab-pi
+plex01
 
-[octoprint]
+[labnet-ws]
+lab-pi.local
+
+[labnet-octoprint]
 octoprint.local 
